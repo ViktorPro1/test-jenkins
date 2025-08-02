@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Інформація про PWA</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            background: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .pwa-container {
+            background: white;
+            max-width: 600px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            padding: 30px 40px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .pwa-container h2 {
+            margin-top: 0;
+            color: #222;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .pwa-container p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .pwa-container ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+            color: #444;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .pwa-container ol li {
+            margin-bottom: 12px;
+        }
+
+        .pwa-container ol li:last-child {
+            margin-bottom: 0;
+        }
+
+        .pwa-container ul {
+            padding-left: 20px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #444;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .pwa-container ul li {
+            margin-bottom: 12px;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .back-button:hover {
+            background-color: #357abd;
+        }
+
+        @media (max-width: 480px) {
+            .pwa-container {
+                padding: 20px;
+                border-radius: 8px;
+            }
+
+            .pwa-container h2 {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+
+            .pwa-container p,
+            .pwa-container ol,
+            .pwa-container ul {
+                font-size: 14px;
+            }
+
+            .back-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="pwa-container" id="pwa-info">
+        <h2>Що таке PWA?</h2>
+        <p>Ми використовуємо технологію Progressive Web App (PWA). Це означає, що на вашому мобільному телефоні браузер
+            повинен автоматично запропонувати встановити нашу платформу як додаток.</p>
+        <p>Якщо такого вікна не зʼявилось, це можна легко виправити. Просто:</p>
+        <ol>
+            <li>Оновіть сторінку в браузері.</li>
+            <li>Закрийте та знову відкрийте браузер.</li>
+            <li>Відкрийте меню браузера (три крапки або стрілка) і оберіть "Додати на головний екран".</li>
+            <li>Підтвердіть встановлення додатку.</li>
+        </ol>
+        <p>Після цього ви зможете користуватись платформою як звичайним додатком — швидко і навіть без інтернету.</p>
+        <button class="back-button" onclick="history.back()">Повернутись назад</button>
+    </section>
+</body>
+
+</html>
